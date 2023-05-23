@@ -575,6 +575,7 @@ Set-Content C:\support\OfficeConfig.xml @"
     <Product ID="O365BusinessRetail">
       <Language ID="en-us" />
       <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
     </Product>
   </Add>
   <Property Name="SharedComputerLicensing" Value="0" />
