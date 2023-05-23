@@ -588,6 +588,8 @@ Set-Content C:\support\OfficeConfig.xml @"
 "@
 Set-Location C:\Support\
 Start-Process .\OfficeSetup.exe -Wait -ArgumentList '/configure OfficeConfig.xml'
+#Uninstall Built-In OneNote
+Get-AppxPackage *OneNote* | Remove-AppxPackage
 }
 else
 {
